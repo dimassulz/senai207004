@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio tabela</title>
+    <style type="text/css">
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            /*Junta as bordas tabela retirando o espaço interno*/
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #666;
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Adicionando bordas as tags <table><th><td>
+            borda com 1px de largura 
+            tipo de linha solid
+            cor cinza */
+        }
+
+        td,
+        th {
+            padding: 14px;
+            /* Espaçamento interno do <td> */
+            text-align: center;
+            /* Alinhamento centralizado <td> */
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <table id="nomeTabela">
+        <thead>
+            <tr>
+                <th colspan="4">
+                    <h2>Lista de usuários x salários</h2>
+                </th>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Salário</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="3">Total</th>
+                <th id="total"></th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>25</td>
+                <td>N1</td>
+                <td>
+                    <a href="mailto:dimassulz@gmail.com">email@email.com</a>
+                </td>
+                <td>R$ 2.500,00</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>N2</td>
+                <td>
+                    <a href="mailto:dimassulz@gmail.com">email@email.com</a>
+                </td>
+                <td>R$ 2.800,00</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>N3</td>
+                <td>
+                    <a href="mailto:dimassulz@gmail.com">email@email.com</a>
+                </td>
+                <td>R$ 3.100,00</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>N4</td>
+                <td>
+                    <a href="mailto:dimassulz@gmail.com">email@email.com</a>
+                </td>
+                <td>R$ 3.400,00</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>N5</td>
+                <td>
+                    <a href="mailto:dimassulz@gmail.com">email@email.com</a>
+                </td>
+                <td>R$ 13.700,00</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>N6</td>
+                <td>
+                    <a href="mailto:dimassulz@gmail.com">email@email.com</a>
+                </td>
+                <td>R$ 50.000,00</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>N7</td>
+                <td>
+                    <a href="mailto:dimassulz@gmail.com">email@email.com</a>
+                </td>
+                <td>R$ 4.300,00</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>N8</td>
+                <td>
+                    <a href="mailto:dimassulz@gmail.com">email@email.com</a>
+                </td>
+                <td>R$ 4.600,00</td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>N9</td>
+                <td>
+                    <a href="mailto:dimassulz@gmail.com">email@email.com</a>
+                </td>
+                <td>R$ 4.900,00</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+<script>
+    function mascaraValor(valor) {
+        valor = valor.toString().replace(/\D/g, "");
+        valor = valor.toString().replace(/(\d)(\d{8})$/, "$1.$2");
+        valor = valor.toString().replace(/(\d)(\d{5})$/, "$1.$2");
+        valor = valor.toString().replace(/(\d)(\d{2})$/, "$1,$2");
+        return valor
+    }
+    $(document).ready(() => {
+        let soma = 0;
+        $('#nomeTabela tbody').find('tr').find('td:last').each(function (i, v) {
+            soma += parseFloat($(v).html().replace("R$ ", "").replace(".", ""));
+        })
+        $('#total').html('R$ ' + mascaraValor(soma.toFixed(2)));
+    });
+</script>
+
+</html>

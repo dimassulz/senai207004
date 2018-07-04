@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Criando uma tag</title>
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+</script>
+<![endif]-->
+    <script> document.createElement('teste') </script>
+
+    <style>
+
+        /* Configurando Tags */
+        header, section, footer, nav, main, figure{
+            display: block;
+        }
+
+        /*
+           Configurando Tag Teste criada pelo JS
+           <teste></teste> 
+        */
+        teste{
+            display:block; /* Mostrar em bloco */
+            background: #ddd; /* Cor de fundo do bloco */
+            padding: 50px; /* Espaçamento interno do texto para 
+                              a borda do elemento (todos os lados) 
+                           */
+            font-size:30px; /* Tamanho da fonte (letra) */
+        }
+
+    </style>
+
+    </head>
+    <body>
+        <header>
+            Cabeçalho do site
+        </header>
+        
+        <main>
+            Conteudo principal do site
+            <section>
+                <h1>Criando uma tag HTML usando JS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cum porro molestiae perferendis ipsa accusantium earum
+                    unde totam a et ipsam, debitis dignissimos aut ex esse
+                    distinctio laboriosam doloribus corrupti maxime.
+                </p>
+            </section>
+            <article>
+                    <h1>Criando uma tag HTML usando JS</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cum porro molestiae perferendis ipsa accusantium earum
+                        unde totam a et ipsam, debitis dignissimos aut ex esse
+                        distinctio laboriosam doloribus corrupti maxime.
+                    </p>
+            </article>
+            <aside>
+
+            </aside>
+        </main>
+        <footer>
+                Rodapé do site
+        </footer>
+        <teste>
+            Teste na tag teste que foi criada via JS
+        </teste>
+        <teste>
+            Teste 2 dfkjlsdlkajfkdl na tag teste que foi criada via JS
+        </teste>
+    </body>
+</html>

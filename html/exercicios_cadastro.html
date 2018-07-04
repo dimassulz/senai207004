@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <main>
+        <form action="recebe.php" method="post">
+            <fieldset>
+
+                <legend>Dados Pessoais</legend>
+
+                Nome: <input type="text" name="nome" id="nome" required><br>
+                Endereço: <input type="text" name="endereco" id="endereco" required><br>
+                Cidade: <input type="text" name="cidade" id="cidade" required><br>
+                Estado: 
+                <select name="estado" id="estado" required>
+                    <option value="SP">São Paulo</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </select>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                Natureza do cargo <br>
+                <input type="radio" name="cargo" id="" value="1"> Gerencia
+                <input type="radio" name="cargo" id="" value="2"> Financeiro
+                <input type="radio" name="cargo" id="" value="3"> Recepção
+                <input type="radio" name="cargo" id="" value="4"> Administração
+                <input type="radio" name="cargo" id="" value="5"> Jurídico
+                <br><br>
+
+                Área de interesse <br>
+                <input type="checkbox" name="area[]" value="1" id=""> Computação
+                <input type="checkbox" name="area[]" value="2"  id=""> Biologia
+                <input type="checkbox" name="area[]" value="3"  id=""> Meio Ambiente
+                <input type="checkbox" name="area[]" value="4" id=""> Engenharia
+                <input type="checkbox" name="area[]" value="5"  id=""> História
+                <br><br>
+                Mini-currículo 
+                <textarea cols="65" rows="10" placeholder="Digite seu Mini-currículo" required>
+
+                </textarea>
+            </fieldset>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </main>
+</body>
+</html>

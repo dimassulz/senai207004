@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhando com elementos Multimidia</title>
+</head>
+
+<body>
+    <header>
+        <h1>Multimidia</h1>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Youtube - iframe</h2>
+            <iframe src="https://www.youtube.com/embed/iZ1ucWosOww?controls=0&autoplay=1&loop=1" width="640px" height="480px" style="border:none;">
+            </iframe>
+        </section>
+        <hr>
+        <section>
+            <h2>Video</h2>
+            <video width="640" height="480" controls autoplay poster="img/dory.jpg">
+                <source src="midia/htmlvideo.mp4" type="video/mp4">
+                <!-- tag de legenda (caso tenha) -->
+                <track src="subtitle.vtt" srclang="pt-br" label="Portugues"> Seu navegador não tem suporte para esse video! Clique para fazer o
+                <a href="midia/htmlvideo.mp4">download</a>
+            </video>
+        </section>
+        <hr>
+        <section>
+            <h2>Audio</h2>
+            <audio controls autoplay>
+                <source src="midia/htmlaudio.mp3" type="audio/mpeg"> Seu navegador não tem suporte para esse audio! Clique para fazer o
+                <a href="midia/htmlaudio.mp3">download</a>
+            </audio>
+        </section>
+    </main>
+    <hr>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

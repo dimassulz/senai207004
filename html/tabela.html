@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            /*Junta as bordas tabela retirando o espaço interno*/
+        }
+        table, th, td {
+            border: 1px solid #666;
+            /* 
+            Adicionando bordas as tags <table><th><td>
+            borda com 1px de largura 
+            tipo de linha solid
+            cor cinza */
+        }
+        td{
+            padding:20px; /* Espaçamento interno do <td> */
+            text-align: center; /* Alinhamento centralizado <td> */
+        }
+    </style>
+    
+</head>
+<!-- 
+    #Tabela (é bom seguir essa ordem)
+    <table>
+        <thead>
+        <tfoot>
+        <tbody>
+    </table>
+
+    #Estrutura HTML
+    <body> (corpo do site)
+    <header> (separar o cabeçalho do site)
+    <footer> (separar o rodapé do site)
+-->
+<body>
+    <header>
+        <h1>Trabalhando com tabelas</h1>
+    </header>
+    <main>
+        <section>
+            <!-- Inicio da tabela -->
+            <table>
+                <!-- Inicio Cabeçalho da tabela (não obrigatório)-->
+                <thead>
+                    <tr>
+                       <th>Nome</th> 
+                       <th>Idade</th>
+                       <th>Telefone</th>  
+                    </tr>
+                </thead>
+                <!-- Fim Cabeçalho da tabela -->
+                <!-- Inicio Rodapé da tabela (não obrigatório)-->
+                <tfoot>
+                    <tr>
+                        <!-- colspan mesclar celulas -->
+                        <th colspan="3">Rodapé da tabela</th> 
+                    </tr>
+                </tfoot>
+                <!-- Fim Rodapé da tabela -->
+                <!-- Inicio corpo da tabela -->
+                <tbody>
+                    <tr>
+                        <td>Jurema</td>
+                        <td>66</td>
+                        <td>(61) 3325-5854</td>
+                    </tr>
+                    <tr>
+                        <td>Josicleison</td>
+                        <td>45</td>
+                        <td>(61) 9965-9877</td>
+                    </tr>
+                    <tr>
+                        <td>Ribamar</td>
+                        <td>80</td>
+                        <td>(61) 3325-9877</td>
+                    </tr>
+                </tbody>
+                <!-- Fim corpo da tabela -->
+            </table>
+            <!-- Fim da tabela -->
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

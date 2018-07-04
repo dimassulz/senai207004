@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario - Login</title>
+</head>
+
+<body>
+    <main>
+        <h1>Login</h1>
+        <!--
+            Comandos (verbos) HTTP
+            #Rest ou Restful
+            *GET (utiliza a URL para enviar parametros)
+                Consultas | pesquisa | retorno da informção
+            
+            *POST (enviar parametros sem passar pela URL)
+                Inserção de dados (Cadastro)
+
+            PUT (enviar parametros sem passar pela URL)
+                Atualização de dados (Atualizar um registro)
+
+            DELETE (enviar parametros sem passar pela URL)
+                Deletar dados
+
+        -->
+        <form action="recebe.php" method="POST">
+            <label for="senha">Login</label>
+            <br>
+            <input type="text" name="login" placeholder="Login" maxlength="60" value="">
+            <br>
+            <label for="senha">Senha</label>
+            <br>
+            <input type="password" name="senha" 
+            maxlength="30" placeholder="Senha" value="">
+            <br>
+            <input type="submit" value="Entrar">
+        </form> 
+        <hr>
+        <button>Cadastrar novo usuário</button>  
+        <button>Esqueci a senha</button> 
+    </main>
+    <script>
+    var teste = function(){
+        console.log('Teste do console!!!!');
+    };
+    </script>
+</body>
+
+</html>
