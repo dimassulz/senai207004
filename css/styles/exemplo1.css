@@ -1,0 +1,27 @@
+/*
+Seletor universal do CSS aplica o estilo CSS a todas as tags
+*/
+*{
+    margin:0; /* Margem 0*/
+    padding:0; /* Espaçamento interno 0 */
+}
+
+header{
+    background-color: brown; /* Cor de fundo */
+    height: 150px; /* Altura (px,cm,mm,em,vh,vw,vmin) */
+}
+
+footer{
+    background-color: limegreen;
+}
+
+h1{
+    color:blue;
+}
+/* configuração css das tags de paragrafo */
+p{   
+    background-color: beige;
+    font-size: 20px; /* Tamanho da fonte */
+    color:#999; /* Cor da fonte */
+    text-align: center; /* Alinhamento centralizado */
+}

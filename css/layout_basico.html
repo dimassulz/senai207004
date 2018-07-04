@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout Básico</title>
+    <link rel="stylesheet" href="styles/l_basico.css">
+    <!-- 
+        Adicionando a biblioteca CSS Font Awesome v4.7 (icones)
+        Adicione um icone apenas com a tag 
+        <i class="fa classdofontawesome" aria-hidden="true"> 
+        e a classe que desejar exemplo: 
+        <i class="fa fa-address-card" aria-hidden="true">
+        Documentação dos icones:
+        https://fontawesome.com/v4.7.0/icons/
+        Link do CDN para vincular o CSS (copy Tag CSS): https://cdnjs.com/libraries/font-awesome
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Layout Básico</h1>
+        <p>Trabalhando layout</p>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="linha">
+        <aside class="coluna_lateral">
+            <h2 class="titulo">Lateral</h2>
+            <div class="card">
+                <input type="search" placeholder="Pesquisa">
+            </div>
+        </aside>
+        <section class="coluna_central">
+            <h2 class="titulo"><i class="fa fa-address-card" aria-hidden="true"></i> Contéudo principal</h2>
+            <h5 class="texto_direita">Publicado em 15 de Junho de 2017</h5>
+            <div class="imgfake altura_250"> Imagem Fake </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quos! Modi explicabo quasi vel accusantium ducimus, in
+                autem sunt porro odit tenetur, quibusdam sit fuga aut itaque praesentium rem dicta!
+            </p>
+
+            <p class="acoes_post">
+                <span class="cursor_link"> 1 <i class="fa fa-thumbs-o-up"></i> </span>
+
+                <span class="cursor_link"> 0 <i class="fa fa-thumbs-o-down"></i> </span>
+
+                <p class="texto_direita cursor_link"><i class=" fa fa-reply" aria-hidden="true"></i> Responder</p>
+            </p>
+           
+            <h2 class="titulo">Contéudo principal</h2>
+            <h5 class="texto_direita">Publicado em 15 de Junho de 2017</h5>
+            <div class="imgfake altura_250"> Imagem Fake</div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quos! Modi explicabo quasi vel accusantium ducimus, in
+                autem sunt porro odit tenetur, quibusdam sit fuga aut itaque praesentium rem dicta!
+            </p>
+            <p class="acoes_post">
+                <span class="cursor_link"> 12 <i class="fa fa-thumbs-o-up"></i> </span>
+                <span class="cursor_link"> 3 <i class="fa fa-thumbs-o-down"></i> </span>
+                <p class="texto_direita cursor_link"><i class=" fa fa-reply" aria-hidden="true"></i> Responder</p>
+            </p>
+        </section>
+        <aside class="coluna_lateral">
+            <h2 class="titulo"><i class="fa fa-address-card-o" aria-hidden="true"></i> Posts populares</h2>
+            <div class="imgfake altura_40"> Imagem Fake</div>
+            <br>
+            <div class="imgfake altura_40"> Imagem Fake</div>
+            <br>
+            <div class="imgfake altura_40"> Imagem Fake</div>
+            <br>
+            <div class="imgfake altura_40"> Imagem Fake</div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;Copyright - SENAI DF - 2018</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+div.caixa_relativa{
+    position:relative;
+}
+
+div.caixa_absoluta{
+    position:absolute;
+}
+
+div.caixa_fixa{
+    position:fixed;
+}
+
+div.caixa_estatica{
+    position:static;
+}
+
+div.esquerda_topo{
+    left:0;
+    top:0;
+}
+
+div.direita_topo{
+    right:0;
+    top:0;
+}
+
+div.esquerda_base{
+    left:0;
+    bottom:0;
+}
+
+div.direita_base{
+    right:0;
+    bottom:0;
+}
+
+div.t_250_250{
+    width: 250px;
+    height: 250px;
+}
+
+div.bg_azul{
+    background-color: blue;
+}
+
+div.bg_verde{
+    background-color: green;
+}
+
+div.bg_amarelo{
+    background-color: yellow;
+}
+
+div.bg_bege{
+    background-color: beige;
+}

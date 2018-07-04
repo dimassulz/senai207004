@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 1 - CSS</title>
+    <!-- 
+        Tipos de css
+        1 - CSS Externo
+        2 - CSS Incorporado
+        3 - CSS Em linha
+    -->
+    <!-- Link de importação do CSS Externo -->
+    <link rel="stylesheet" href="styles/exemplo1.css">
+
+    <!-- CSS Incorporado na página -->
+    <style type="text/css">
+        h1 {
+            color: green;
+        }
+
+        /* configuração css das tags de paragrafo */
+
+        p {
+            background-color: beige;
+            font-size: 20px;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+    <!--
+        Especificidade no modelo de cascata
+        1 - Css Externo     1  (menos efetivo, menos repetição, código limpo e organizado)
+        2 - Incorporado     10
+        3 - Style           100 (mais efetivo, muita repetição, código sujo e bagunçado)
+    -->
+</head>
+
+<body>
+    <header>
+        <span>Escrevendo o cabeçalho</span>
+    </header>
+    <main>
+        <h1 style="color:#999; font-size:80px; 
+    background-color: red;">Titulo H1 com CSS em linha</h1>
+        <p>Escrevendo um paragrafo com css incorporado</p>
+        <p>Escrevendo um paragrafo com css incorporado</p>
+        <p>Escrevendo um paragrafo com css incorporado</p>
+        <p>Escrevendo um paragrafo com css incorporado</p>
+        <p>Escrevendo um paragrafo com css incorporado</p>
+        <p>Escrevendo um paragrafo com css incorporado</p>
+    </main>
+
+    <footer>
+        <p>Escrevendo o rodape</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px; /* No navegador o tamanho padrão é 16px */
+    background-color: #f1f1f1;
+}
+
+header{
+    padding: 3em; /* 1em equivale ao font-size aplicado no elemento pai (10px x 3) = 30px */
+    text-align: center;
+    background: #FFF;
+}
+
+header h1{
+    font-size: 5em;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    overflow: hidden; /* arrumando o elemento para não ficar colando a div de baixo */
+    background-color: #999;
+    width: 100%;
+}
+
+nav ul li a{
+    margin:0 auto;
+    display: block;
+    float: left;
+    width: 8em;
+    padding: 1em 2em;
+    text-decoration: none;
+    color:#EEE;
+    border-right: 1px solid #eee;
+    text-align: center;
+    text-transform: uppercase; /* Todo o texto em caixa alta */
+}
+
+nav ul li a:hover{
+    color:#999;
+    background-color: #EEE;
+}
+/* :after pseudo classe que será executada após a linha
+e aplicará um conteudo vazio
+:before pseudo classe que será executada antes da linha
+e aplicará um conteudo vazio
+Serve apenas para limpar 
+*/
+.linha:after, .linha:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.coluna_lateral{
+    float: left;
+    width: 19%;
+    margin-left: 1%;
+    padding: 0.5em;
+}
+
+.coluna_central{
+    float: left;
+    width: 60%;
+    padding: 1em;
+    border-left: 0.2em solid #DDD;
+    border-right: 0.2em solid #DDD;
+}
+
+main{
+    margin-top:1em;
+    background-color: #fff;
+}
+
+
+footer{
+    padding: 2em;
+    text-align: center;
+    background-color: #DDD;
+    margin-top: 1em;
+}
+
+.imgfake{
+    background-color: #aaa;
+    width:100%;
+    padding:1em;
+}
+
+.altura_250{
+    height:25em;
+}
+.altura_40{
+    height:4em;
+}
+
+.texto_direita{
+    text-align: right;
+}
+
+h2.titulo{
+    /* Borda somente embaixo */
+    padding-bottom: 0.3em;
+    border-bottom: 1px dashed #AAA;
+}
+
+h5{
+    font-style: italic; /* Estilo italico na fonte */
+}
+
+.card{
+    margin:2%;
+    padding: 1%;
+}
+
+.card input{
+    width:100%;
+    height: 2em;
+}
+
+.cursor_link{
+    cursor: pointer;
+}
+
+/* 
+Media queries
+
+Layout responsivo - Quando o tamanho da tela alcançar 800px e as colunas central e lateral ficam com o tamanho de 100% da tela 
+*/
+@media screen and (max-width:800px) {
+    body{
+        background-color: yellow;
+    }
+    .coluna_central, .coluna_lateral{
+        width:100%;
+    }
+}
+
+/* 
+Layout responsivo - Quando o tamanho da tela alcançar 500px as colunas central e lateral ja estão com o o tamanho de 100% da tela, agora os links do menu assume 100% da tela e não flutuam 
+*/
+@media screen and (max-width:500px) {
+    body{
+        background-color: blue;
+    }
+    nav ul li a{
+        float:none;
+        width: 100%;
+    }
+}

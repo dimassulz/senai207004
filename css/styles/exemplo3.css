@@ -1,0 +1,75 @@
+*{
+    margin:0;
+}
+header,nav,main,footer{
+    width: 90%;
+    margin: 10px auto;
+    background-color: #EEE;
+}
+
+/* <main> <p> */
+main p{
+    font-size: 30px;
+}
+/* Pseudo classe é um estilo que será aplicado quando ocorrer uma ação, no caso abaixo um hover (mouse passar sobre o <p>) */
+main p:hover{
+    font-size: 45px;
+    color:red;
+    cursor:zoom-out; /* Muda a seta do mouse ao passar sobre */
+}
+
+/*
+:active quando ocorrer o click do mouse
+*/
+main p:active{
+    color:#FFF;
+    text-decoration: underline; /*colocar um underline no texto*/
+}
+/* Estilo da lista */
+nav ul{
+    list-style: none; /* estilo da lista removido */
+    padding: 0; /* Espaçamento interno da lista removido */
+}
+/* Estilo do item da lista */
+nav ul li{
+    display: inline-block;/* Colocar a lista em linha */
+    padding: 10px 20px;/* Espaçamento interno */
+}
+/* Link padrão sem o underline */
+nav a:link{
+    text-decoration: none;
+}
+/* Quando visitado a cor fica vermelho */
+nav a:visited{
+    color:red;
+}
+/* Link quando o mouse passar sobre com o underline e cor laranja*/
+nav a:hover{
+    text-decoration: underline;
+    color: darkorange;
+}
+/* Link quando o clicar */
+nav a:active{
+    font-size:20px;
+    color: blue;
+}
+
+/*
+margin: 10px; 
+->todas as margens (top,bottom,right,left)
+
+margin: 10px 20px; 
+->10px top e bottom | 20px left e right
+
+margin: 10px 20px 30px; 
+->10px top | 20px left e right | 30px bottom
+
+margin: 10px 20px 30px 40px; 
+->Sentido do relogio (top,right,bottom,left)
+
+margin-top:10px; Margem superior
+margin-bottom:50px; Margem inferior
+margin-left:20px; Margem esquerda
+margin-right:30px; Margem direita
+
+*/

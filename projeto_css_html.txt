@@ -1,0 +1,16 @@
+Criação de Projeto Html e CSS
+Criar uma página de pizzaria
+Para a pizzaria Primo soares
+Hoje existe uma página com 6 menus.
+
+1 - O site deve ter no minimo 5 páginas
+
+2 - O código CSS deve estar comentado linha a linha
+
+3 - Melhoria do site https://primosoarespizzaria.com.br (cores, textos, formulario, menu, cabeçalho)
+
+4 - Deve ter um menu de navegação contendo o link das 5 páginas todos funcionando.
+
+5 - O html deve conter as tags header, nav, main, footer.
+
+6 [Opcional] - Deve ser responsivo.

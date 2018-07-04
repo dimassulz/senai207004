@@ -1,0 +1,89 @@
+header{
+    height: 250px;  
+    background-color: #999;
+}
+nav{
+    height: 90px;  
+    background-color: #333;
+}
+main{
+    height: 800px;  
+    background-color: #EEE;
+}
+footer{
+    height: 200px;  
+    background-color: #999;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    text-align: center;
+}
+
+p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 21px; /* Altura da linha */
+    text-align: justify; /* Texto justificado */
+    padding-left: 10px; /* Espaçamento interno esquerdo */
+    padding-right: 10px;/* Espaçamento interno direito */
+    padding-top: 10px; /* Espaçamento interno superior */
+    margin-top:0; /* Sem margem superior */
+}
+
+/*
+Qualquer tag recebe os atributos:
+id="" ou class=""
+O id é aplicado a apenas 1 item na página
+
+O class pode ser aplicado a mais de uma tag
+class=""
+*/
+
+/* Trabalhar com o atributo class utilizar o . */
+.centralizado{
+    text-align: center;
+}
+.corazul{
+    color: blue;
+}
+.corbranca{
+    color:#FFF;
+}
+.cordefundoazul{
+    background-color: blue;
+}
+
+/* Trabalhar com o atributo id deve utilizar o # 
+   (Pesquisar niveis de especificidade CSS)
+*/
+#rodape{
+    background-color: yellow;
+}
+
+#cabecalho{
+    background-color: aqua;
+}
+
+#cabecalho h1{
+    padding-top:90px;
+    color:white;
+}
+/* Configuração geral dos 3 ids */
+#esquerda,#central,#direita{
+    width: 33.33%; /* Largura */
+    float: left; /* Flutuar caixa a esquerda */
+}
+
+/* Configuração personalizada do id="esquerda" */
+#esquerda{
+    background-color: #DDD;
+}
+/* Configuração personalizada do id="central" */
+#central{
+    background-color: #CCC;
+    height: 500px; /* Altura */
+}
+/* Configuração personalizada do id="direita" */
+#direita{
+    background-color: #BBB;
+}

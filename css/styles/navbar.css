@@ -1,0 +1,87 @@
+#nav_horizontal {
+    font-family: Arial, Helvetica, sans-serif;
+    /*Tipo de fonte*/
+    font-size: 14px;
+    /* Tamanho da fonte */
+}
+
+#nav_horizontal ul {
+    list-style: none;
+    /* Retirar estilo da lista (topicos) */
+    margin: 0;
+    /* Sem margem */
+    padding: 0;
+    /* Sem espaçamento interno*/
+    background-color: #333;
+    /* Cor de fundo do menu */
+}
+
+#nav_horizontal ul li {
+    display: inline-block;
+    /* Lista ficar horizontal */
+}
+
+#nav_horizontal ul li a {
+    display: block;
+    /* Formato de botão no link */
+    color: #fff;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinhamento centralizado do botão */
+    padding: 15px 20px;
+    /* Espaçamentno interno do botão */
+    text-decoration: none;
+    /* Sem o sublinhado do link */
+}
+
+/* Quando o mouse passar sobre o botão */
+
+#nav_horizontal ul li a:hover {
+    background-color: #111;
+    /* cor de fundo do botão */
+}
+
+/* Quando clicar sobre o botão */
+
+#nav_horizontal ul li a:active {
+    background-color: #EEE;
+    /* cor de fundo do botão */
+    color: #333;
+    /* cor do texto */
+}
+
+#nav_vertical {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+#nav_vertical ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+#nav_vertical ul li a {
+    display: block;
+    text-align: center;
+    color: #111;
+    padding: 10px 20px;
+    border: 1px dashed #111;
+    /* Borda (Tamanho tipo cor) */
+    /* Style bordas 
+    none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit
+    */
+    text-decoration: none;
+}
+
+#nav_vertical ul li a:hover {
+    color: #FFF;
+    background-color: #555;
+}
+
+#nav_vertical ul li a.active {
+    background-color: green;
+    color: #fff;
+}
