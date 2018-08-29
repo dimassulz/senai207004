@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio Lanchonete</title>
+    <script>
+    /*
+    Uma lanchonete vende apenas um unico tipo de sanduiche:
+    Esse leva 200g de carne, 100g de queijo, 50g de presunto
+    
+    A lanchonete irá informar no sistema a quantidade de sanduiches a
+    serem feitos.
+    
+    O sistema calculará quantos kg de carne, queijo e presunto serão necessários para fazer os sanduiches.
+    */
+    var qtdSanduiches = prompt('Digite a quantidade de sanduiches: ');
+    var carne = 0.200; //poderia ter feito assim 200/1000
+    var queijo = 0.100; //poderia ter feito assim 100/1000
+    var presunto = 0.05; //poderia ter feito assim 50/1000
+
+
+    alert('Para fazer '+qtdSanduiches+' sanduiches você deve comprar o seguinte');
+
+    var totalCarne = carne*qtdSanduiches;
+    var totalQueijo = queijo*qtdSanduiches;
+    var totalPresunto = presunto*qtdSanduiches;
+
+    alert('Carne '+totalCarne+'kg | Queijo '+totalQueijo+'kg | Presunto '+totalPresunto+'kg');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

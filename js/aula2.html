@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 2 - JS</title>
+    <script>
+        var aluno = prompt('Digite o nome do aluno: '); //Texto (string)
+        var idade = 48; // Inteiro (integer)
+        var altura = 1.78; // Decimal (float)
+        
+        //parseInt() função que força o tipo de dado a ser Inteiro(integer)
+        var nota1 = parseInt(prompt('Digite a nota 1'));
+        var nota2 = parseInt(prompt('Digite a nota 2'));
+        var nota3 = parseInt(prompt('Digite a nota 3'));
+        //calcular a média das 3 notas e exibir no console.log 
+        var media = (nota1+nota2+nota3)/3;
+        console.log( 'A média do aluno '+aluno+' foi '+media.toFixed(2));
+
+        //caixa de texto 
+        alert('A média do aluno '+aluno+' foi '+media.toFixed(2));
+        console.log(aluno);
+        console.log(idade);
+        console.log(altura);
+
+    </script>
+</head>
+<body>
+    <h1>Trabalhando no arquivo Aula 2</h1>
+</body>
+</html>

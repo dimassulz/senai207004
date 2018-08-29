@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio funções</title>
+    <script src="files_js/funcoes.js">
+    </script>
+</head>
+
+<body>
+    <h1>Salário Anual</h1>
+    <div name="salario">
+        Salario Mensal: <input type="text" name="salarioMensal" id="salarioMensal" onkeyup="salarioAnual()"> <br>
+        <button onclick="salarioAnual()">Calcular Salário</button>
+        <div id="resultadoSalario">
+
+        </div>
+    </div>
+
+    <h1>Menor Valor</h1>
+    <div name="menor">
+        Valor 1: <input type="number" name="n1" id="n1menor"> <br>
+        Valor 2: <input type="number" name="n2" id="n2menor"> <br>
+        <button onclick="menorValor()">Calcular Menor Valor</button>
+        <div id="resultadoMenor">
+
+        </div>
+    </div>
+
+    <h1>Maior Valor</h1>
+    <div name="maior">
+        Valor 1: <input type="number" name="n1" id="n1"> <br>
+        Valor 2: <input type="number" name="n2" id="n2"> <br>
+        <button onclick="maiorValor()">Calcular Maior Valor</button>
+        <div id="resultadoMaior">
+
+        </div>
+    </div>
+
+    <h1>Positivo / Negativo</h1>
+    <div name="pn">
+        Valor <input type="number" name="n1p" id="n1p"> <br>
+        <button onclick="positivoNegativo()">Calcular Positivo/Negativo</button>
+        <div id="resultadoPN">
+
+        </div>
+    </div>
+
+    <h1>Peso Ideal</h1>
+    <div name="pideal">
+        Sexo: <br>
+        <input type="radio" name="sexo" value="M">Masculino
+        <br>
+        <input type="radio" name="sexo" value="F">Feminino
+        <br>
+        Altura <input type="number" name="altura" id="altura"> <br>
+        <button onclick="pesoIdeal()">Calcular Peso Ideal</button>
+        <div id="resultadoPIdeal">
+
+        </div>
+    </div>
+
+
+</body>
+</html>

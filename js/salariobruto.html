@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salário Bruto</title>
+    <script>
+    /*
+    Entrar com o nome e salário bruto de 5 pessoas.
+    Ao final do programa mostrar o nome e o valor da aliquota calculada de imposto de renda, baseada na tabela abaixo:
+
+    Salário < 1000           | ISENTO
+    Salário >= 1000 e < 2000 | Calcular 10% do salário bruto
+    Salário >= 2000          | Calcular 15% do salário bruto
+    
+    */
+
+    var qtdPessoas = 3;
+    var dadosPessoa = [];
+
+    for(var i = 0; i < qtdPessoas; i++){
+        dadosPessoa[i] = {
+            nome: prompt('Digite o nome'),
+            salBruto: parseFloat(prompt('Digite o salário bruto')),
+            aliquota: '',
+        };
+        if(dadosPessoa[i].salBruto < 1000){
+            dadosPessoa[i].aliquota = 'ISENTO';
+        }else if(dadosPessoa[i].salBruto < 2000){
+            dadosPessoa[i].aliquota = dadosPessoa[i].salBruto*0.10;
+        }else{
+            dadosPessoa[i].aliquota = dadosPessoa[i].salBruto*0.15;
+        }
+    }
+    var msg = "";
+    for(var j = 0; j < qtdPessoas; j++){
+        msg += dadosPessoa[j].nome +" - Aliquota: "+dadosPessoa[j].aliquota + "\n";
+    }
+
+    alert(msg);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

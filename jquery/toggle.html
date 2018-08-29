@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toggle</title>
+    <script src="lib/jquery.js"></script>
+    <script>
+        $(function(){
+            //função toggle mostra/esconde elementos
+            $('#showHide').click(function(){
+                $('h1').toggle(1000);
+                $('h2').fadeToggle(1000);
+                $('h3').slideToggle(500);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Toggle Efeito</h1>
+    <h2>Toggle Efeito</h2>
+    <h3>Toggle Efeito</h3>
+    <button id="showHide">Mostrar/Ocultar</button>
+</body>
+</html>

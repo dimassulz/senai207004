@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estrutura Condicional</title>
+    <script>
+    /*
+    Estrutura condicional (IF)
+    */
+
+   
+    /*
+    Operadores de comparação:
+
+    == retorna true se os operadores forem iguais
+    === Estritamente igual, retorna true caso os operadores sejam iguais e do mesmo tipo
+    
+    != diferente, retorna true caso os operandos nao sejam iguais
+    !== estritamente diferente, retorna true caso os operadores não sejam iguais e/ou não sejam do mesmo tipo
+
+    >= retorna true se o operador da esquerda for maior ou igual que o da direita
+    > retorna true se o operador da esquerda for maior que o da direita
+
+    <= retorna true se o operador da esquerda for menor ou igual que o da direita
+    < retorna true se o operador da esquerda for menor que o da direita
+    
+    */
+
+    var n1 = 1;
+    var n2 = 2;
+
+    console.log("Comparador de igualdade == ");
+    console.log(n1==1); //true
+    console.log(n1=="1"); //true
+
+    console.log("Comparador de igualdade e tipo de dado === ");
+    console.log(n1===1); //true
+    console.log(n1==="1"); //false
+
+    console.log("Comparador de diferença != ");
+    console.log(n1!=1); //false
+    console.log(n1!="1"); //false
+
+    console.log("Comparador de diferença e diferenca de tipo !== ");
+    console.log(n1 !== 1); //false
+    console.log(n1 !== "1"); //true
+
+    var idade = 18;
+    //Se a idade for maior ou igual a 18 mostrar "Liberado", caso contrário mostrar "Precisa de Autorização dos Pais";
+
+    //estrutura condicional
+    if(idade >= 18){
+        console.log('Liberado');
+    }else{
+        console.log('Precisa de Autorização dos Pais');
+    }
+
+    //estrutura condicional com (E) AND
+    //estrutura condicional com mais de um critério
+    var altura = 1.70;
+    //Se a idade for maior ou igual a 18 anos E sua altura for maior que 1.70 escrever "Pode Participar", caso contrário exibir "Não foi possível participar"
+
+    var peso = 100;
+
+    if(idade >= 18 && altura > 1.70 && peso < 80){
+        console.log('[E] Pode Participar');
+    }else{
+        console.log('[E] Não foi possível participar');
+    }
+
+    //Se a idade for maior ou igual a 18 anos OU a altura for superior a 1.75 escrever "Pode Participar", caso contrário exibir "Não foi possível participar"
+
+    if(idade >= 18 || altura > 1.75 || peso > 85){
+        console.log('[OU] Pode Participar');
+    }else{
+        console.log('[OU] Não foi possível participar');
+    }
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

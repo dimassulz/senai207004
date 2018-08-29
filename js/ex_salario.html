@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salario Liquido</title>
+    <script>
+        /*
+        Montar um programa onde o usuário informará seu nome, cargo e o salário bruto.
+
+        O programa deve calcular os descontos sobre o salário bruto considerando apenas os 2 descontos abaixo:
+        INSS:9%
+        IRPF:5%
+
+        O programa mostrará a seguinte mensagem ao processar a informação.
+
+        Sr. Fulano - Analista de Sistemas - Salário Liquido R$9999.99
+
+        */
+
+        var nome = prompt('Digite o nome do usuário');
+        var cargo = prompt('Digite o cargo do usuário');
+        var salarioBruto = parseFloat(prompt('Digite o salario bruto do usuário R$'));
+
+        var descontoInss = salarioBruto*(9/100);
+        var descontoIrpf = salarioBruto*(5/100);
+        var salarioLiquido = salarioBruto-descontoInss-descontoIrpf;
+
+        alert('Sr(a). '+nome+' - '+cargo+' - Salário Liquido R$'+salarioLiquido.toFixed(2).replace('.',','));
+
+        //alert('Sr(a). '+nome+' \nCargo: '+cargo+'\nDescontos \nINSS: R$'+descontoInss+'\nIRPF: R$'+descontoIrpf+'\n\nSalário Liquido R$'+salarioLiquido.toFixed(2).replace('.',','));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

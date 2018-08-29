@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repetição (Laços)</title>
+    <script>
+        var texto = "Inicio ";
+        //while
+        var limite = 10;
+        var cont = 0
+        while (cont < limite) {
+            texto += cont + " | ";
+            cont++;
+        }
+        console.log(texto);
+
+        var arrNota = [];
+        cont = 0;
+        while (cont < limite) {
+            arrNota[cont] = prompt("Digite a nota do aluno " + cont);
+            cont++;
+        }
+        console.log(arrNota);
+
+        //for
+        var arrNota = [];
+        for (cont = 0; cont < limite; cont++) {
+            arrNota[cont] = prompt("Digite a nota do aluno " + cont);
+        }
+        console.log(arrNota);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

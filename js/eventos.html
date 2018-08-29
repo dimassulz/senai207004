@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos</title>
+    <script>
+        function mostrarAlert(){
+            //alert('Teste Funcionou! CLICK');
+            document.getElementById('info').innerHTML = "Informações carregadas via click!!!";
+        }
+        function mostrarAlert2(){
+            //alert('Teste Funcionou! MOUSE OVER');
+            document.getElementById('info').innerHTML = "Informações carregadas via mouse over!!!";
+        }
+        function mostrarAlert3(){
+            //alert('Teste Funcionou! DBL CLICK');
+            document.getElementById('info').innerHTML = "Informações carregadas via double click!!!";
+        }
+        function iniciarPagina(){
+           // alert('Iniciando a página');
+           //função para aguardar um determinado tempo a execução de uma função ou um trecho de código.
+            setTimeout(function(){
+                document.getElementById('info').innerHTML = "Informações carregadas via onload!!!";
+            },4000);
+        }
+    </script>
+    <style>
+        #info{
+            background-color:brown;
+            color: white;
+            text-align: center;
+            height: 90px;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body onload="iniciarPagina()">
+    <h1>Trabalhando com eventos!!!</h1>
+    <ul>
+        <li><a href="#" onclick="mostrarAlert()">Click</a></li>
+        <li><a href="#" onmouseover="mostrarAlert2()">Over</a></li>
+        <li><a href="#" ondblclick="mostrarAlert3()">Double Click</a></li>
+    </ul>
+    <div id="info">
+        Aguardando informações...
+    </div>
+
+</body>
+</html>

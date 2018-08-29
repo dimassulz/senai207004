@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caixa Eletrônico</title>
+    <script>
+    /*
+    Assumiremos que o saldo em conta e de 1000
+
+    O usuário digitará quanto deseja sacar, se o valor digitado for maior que o saldo em conta informar:
+    "O valor solicitado é maior que o valor disponivel!"
+
+    caso contrário subtrair o saldo menos valor solicitado.
+    Exemplo de exibição na tela "Sacando R$500, saldo final R$500"
+    
+    */
+
+    var saldoConta = 1000;
+
+    var valorSaque = parseFloat(prompt('Quanto deseja sacar?'));
+
+    if(valorSaque > saldoConta){
+        alert('Seu saldo é de '+saldoConta+' \nO valor solicitado é maior que o valor disponivel em conta!');
+    }else{
+        var saldoFinal = saldoConta - valorSaque;
+        alert('Sacando R$'+valorSaque+', saldo final R$'+saldoFinal);
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

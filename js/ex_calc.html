@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <script>
+        /*
+        Criar uma calculadora que faças as 4 operações matemáticas
+        Utilizando apenas 2 valores e o operador.
+        Utilizar o switch case
+
+        Mostar o result da conta;
+        */
+
+        var valor1 = parseFloat(prompt('Valor 1'));
+        var op = prompt('Operador (+ - * /) ');
+        var valor2 = parseFloat(prompt('Valor 2'));
+        var resultado;
+
+        switch (op) {
+            case "+":
+                resultado = valor1 + valor2;
+                break;
+            case "-":
+                resultado = valor1 - valor2;
+                break;
+            case "*":
+                resultado = valor1 * valor2;
+                break;
+            case "/":
+                resultado = valor1 / valor2;
+                break;
+            default:
+                resultado = "Digite uma operação válida!";
+        }
+        
+
+        
+        if (!isFinite(resultado)) {
+            alert('Não é um calculo válido');
+        } else {
+            alert(resultado);
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

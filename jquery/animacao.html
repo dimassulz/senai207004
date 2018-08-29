@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animação</title>
+    <script src="lib/jquery.js"></script>
+    <script>
+        $(function(){
+            $('.iniciar').on('click',function(){
+                $('.caixa').animate({
+                    left:'250px',
+                    bottom:'250px',
+                    opacity: 1,
+                    width: '350px',
+                    height: '350px'
+                },2000);
+            });
+
+            $('h2').on('mouseover',function(){
+                $(this).animate({
+                    fontSize: '30px'
+                });
+            });
+            $('h2').on('mouseout',function(){
+                $(this).animate({
+                    fontSize: '18px'
+                });
+            });
+        });
+    </script>
+    <style>
+        .caixa{
+            width: 150px;
+            height: 150px;
+            background-color: brown;
+            position:absolute;
+            opacity: 0; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Animação no Texto</h2>
+    <button class="iniciar">Iniciar Animação</button>
+    <div class="caixa"></div>
+</body>
+</html>

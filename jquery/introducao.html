@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introdução Jquery</title>
+    <script src="lib/jquery.js"></script>
+    <script>
+        /*
+        JQuery é uma biblioteca JavaScript 
+        "write less, do more..."
+        "escreva menos, faça mais..."
+             
+        -Manipular HTML/DOM/CSS
+        -Manipular eventos
+        -Efeitos e animações
+        -AJAX
+        */
+        //Iniciando o jQuery
+        $(function () {
+            $('#mostrar').hide(); //botao mostrar vem escondido
+            //id -> #nomedoid
+            //class -> .nomedaclass
+            //tag -> nomedatag -> exemplo: button
+            //Os seletores do CSS $('#mostrar')
+            $('#mostrar').on('click', function () {
+                $('h1, hr, h3, #ocultar').fadeIn(1000); //mostra as tags h1, hr, h3, e o botao ocultar
+                $('#mostrar').fadeOut(1000); //esconde o botão do id=mostrar
+            });
+
+            $('#ocultar').on('click', function () {
+                $('h1, hr, h3, #ocultar').fadeOut(1000); //esconde as tags h1, hr, h3, e o botao ocultar
+                $('#mostrar').fadeIn(1000); //mostra o botão do id=mostrar
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Introdução a biblioteca JS - Jquery</h1>
+    <hr>
+    <h3>Título 1</h3>
+    <h3>Título 2</h3>
+    <button id="mostrar">Mostrar</button>
+    <button id="ocultar">Ocultar</button>
+</body>
+
+</html>

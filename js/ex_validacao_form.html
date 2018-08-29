@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validação Formulário</title>
+    <script src="files_js/validacao.js"></script>
+    <style>
+        span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+
+        <!-- Validar todos os campos usando JS -->
+        <!-- CPF, verificar se o foi preenchida a informação e se o usuario digitou número que contenha 11 digitos, se quiser pode procurar uma funçao para verificar o CPF -->
+        <label for="CPF">
+            CPF:
+        </label>
+        <input type="text" name="CPF" id="CPF" placeholder="digite um CPF">
+        <br>
+        <span id="erroCPF"></span>
+        <br>
+         <!-- verificar se o sexo foi marcado -->
+        <label for="sexo">Sexo:</label> 
+        <input type="radio" name="sexo" value="M">Masculino
+        <input type="radio" name="sexo" value="F">Feminino
+        <br>
+        <span id="erroSexo"></span>
+        <br>
+        <!-- Nome, verificar se o usuario digitou mais de 1 nome e mais de 7 caracteres  -->
+        <label for="nome">
+            Nome:
+        </label>
+        <input type="text" name="nome" id="nome" placeholder="digite um Nome">
+        <br>
+        <span id="erroNome"></span>
+        <br>
+         <!-- E-mail, verificar se o usuario digitou um e-mail valido e mais de 10 caracteres  -->
+        <label for="email">
+            E-mail:
+        </label>
+        <input type="email" name="email" id="email" placeholder="digite um e-mail valido">
+        <br>
+        <span id="erroEmail"></span>
+        <br>
+           <!-- Data, verificar se o usuario digitou algum valor na data de nascimento -->
+        <label for="dtNasc">
+            Data nascimento:
+        </label>
+        <input type="date" name="dtNasc" id="dtNasc" placeholder="Data de Nascimento"  pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}">
+        <br>
+        <span id="erroDtNasc"></span>
+        <!-- Descricao, verificar se o usuario digitou algum valor na descrição do campo -->
+        <label for="descricao">
+            Descrição:
+        </label><br>
+        <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+        <span id="erroDescricao"></span>
+        <hr>
+        <button onclick="validarForm()">Salvar</button>
+        <button type="reset">Limpar</button>
+<hr>
+<div id="usuario">
+Aguardando dados corretos...
+</div>
+</body>
+</html>

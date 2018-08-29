@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch Case - JavaScript</title>
+    <script>
+        /*
+        Criando um programa onde o usuário informará um número de 1 a 7 e o sistema informará o dia da semana (exemplo: segunda-feira)
+        Considerando que 1 é domingo e 7 sábado.
+        */
+
+        var n = parseInt(prompt('Informe um número de 1 a 7'));
+
+
+        //alert('Você digitou o número '+n+' equivale a domingo');
+        /* Copiar */
+        var msg = "Você digitou o número ";
+        
+
+        switch (n) {
+            case 1: msg = (msg + n + ' equivale a domingo');
+                break;
+            case 2: msg = (msg + n + ' equivale a segunda');
+                break;
+            case 3: msg = (msg + n + ' equivale a terça');
+                break;
+            case 4: msg = (msg + n + ' equivale a quarta');
+                break;
+            case 5: msg = (msg + n + ' equivale a quinta');
+                break;
+            case 6: msg = (msg + n + ' equivale a sexta');
+                break;
+            case 7: msg = (msg + n + ' equivale a sabado');
+                break;
+            default:
+                msg = 'Digite valores entre 1 e 7 !!!';
+        }
+        alert(msg);
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

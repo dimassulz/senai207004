@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio Repetição</title>
+    <script>
+    /*
+    Criar um programa onde será informado o nome de 10 pessoas e suas respecticas idades 
+
+    Ao final mostrar o nome da pessoa mais velha e sua idade.   
+    */
+    var arrPessoas = []; //array para armazenar pessoas
+    var maiorIdade = 0;
+    var nomeMaiorIdade = "";
+    for(var i = 0; i < 10; i++){
+        arrPessoas[i] = { nome: prompt('DIGITE O NOME'), 
+                         idade: parseInt(prompt('DIGITE A IDADE')) }
+        if(arrPessoas[i].idade > maiorIdade){
+            maiorIdade = arrPessoas[i].idade;
+            nomeMaiorIdade = arrPessoas[i].nome;
+        }
+    }
+
+    alert("Nome da pessoa com maior idade "+nomeMaiorIdade);
+    alert("Idade "+maiorIdade);
+    
+    console.log(arrPessoas);
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

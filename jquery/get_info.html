@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pegando informações do HTML e de Formulários</title>
+    <script src="lib/jquery.js"></script>
+    <script>
+        $(function(){
+            //Criar o evento de click para o botão btn1
+            $('.btn1').on('click',function(){
+                //.val() serve para campos de formulário
+                $('#campo').val(); //encontra o valor do campo
+                $('#campo').val('Teste Teste'); //insire valor no campo
+                //document.getElementById('campo').value
+                $('#campo').attr('title', 'Testando o title do campo');
+                $('#campo').attr('disabled', true);
+                //depois do #campo adicionar a tag <span>
+                $('#campo').after('<br><span>Não é possivel editar!</span>');
+                //desabilitando o proprio botão (.btn1)
+                $(this).attr('disabled', true);
+                //Modifico o texto do botão 
+                $(this).html('Botão inativo!!!!');
+            });
+
+            //Criar o evento de click para o botão btn2
+            $('.btn2').on('click',function(){
+                $('p').text();//Captura o texto do paragrafo 
+                $('p').html();//Captura o html do paragrafo 
+                //inseri um codigo html depois do ultimo filho da div
+                $('div').append('<p> Teste </p>');
+                $(this).hide();//Ocultando o btn2 após o click
+                $(this).off('click');//Desliga o evento de click
+            });
+            //Criar o evento de keyup para o CPF
+            $('#cpf').on('keyup',function(){
+                //Colocando a informação do valor no cpfDigitado
+                $('.cpfDigitado').html($(this).val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Infomações da tela para o JS via JQuery</h1>
+    Campo: 
+    <input type="text" id="campo" name="campo" value="">
+    <div>
+        <p>Dados do paragrafo</p>
+    </div>
+    <button class="btn1">Mostrar dados do input campo</button><br>
+    <button class="btn2">Mostrar dados do paragrafo</button><br><br>
+    <input type="text" id="cpf" name="cpf" maxlength="11" placeholder="Digite o CPF"><br>
+    <span class="cpfDigitado"></span>
+</body>
+</html> 

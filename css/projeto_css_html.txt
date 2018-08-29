@@ -9,7 +9,7 @@ Hoje existe uma página com 6 menus.
 
 3 - Melhoria do site https://primosoarespizzaria.com.br (cores, textos, formulario, menu, cabeçalho)
 
-4 - Deve ter um menu de navegação contendo o link das 5 páginas todos funcionando.
+4 - Deve ter um menu de navegação contendo o link das 5 páginas.
 
 5 - O html deve conter as tags header, nav, main, footer.
 

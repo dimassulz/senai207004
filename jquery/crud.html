@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD - Jquery</title>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/crud.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contatos</h1>
+    <form id="formCadastro" method="POST">
+
+        Nome:
+        <br>
+        <input type="text" required name="nome" id="nome" placeholder="Digite um nome">
+        <br> Telefone:
+        <br>
+        <input type="tel" required name="fone1" id="fone1" placeholder="Digite um telefone">
+        <br> Telefone 2:
+        <br>
+        <input type="tel" name="fone2" id="fone2" placeholder="Digite um telefone">
+        <br> E-mail:
+        <br>
+        <input type="email" name="email" id="email" placeholder="Digite um e-mail" required>
+        <br>
+        <br>
+        <input id="salvar" type="submit" value="Salvar">
+    </form>
+    <hr>
+    <div id="lista">
+        <h1>Lista de Contatos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone 1</th>
+                    <th>Telefone 2</th>
+                    <th>E-mail</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

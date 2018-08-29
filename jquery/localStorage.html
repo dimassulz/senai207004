@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage</title>
+    <script src="lib/jquery.js"></script>
+    <script>
+        /*
+        //INSERIR INFORMAÇÃO
+        C - CREATE - localStorage.setItem()
+
+        //CONSULTAR INFORMAÇÃO
+        R - READ - localStorage.getItem()
+
+        //ATUALIZAR INFORMAÇÃO
+        U - UPDATE - localStorage.setItem()
+
+        //DELETAR INFORMAÇÃO
+        D - DELETE - localStorage.removeItem()
+        */
+        $(function () {
+            $('#salvar').on('click', function () {
+                let nome = $('#nome').val();
+                //inserindo dados do campo nome
+                localStorage.setItem('nome', nome);
+            });
+
+            $('#buscar').on('click', function () {
+                let nome = localStorage.getItem('nome');
+                let deletar = '<button id="del">X</button>';
+                $('#result').html(nome + deletar);
+                clickDel(); //chamada da funcao clickDel
+            });
+            
+            //const = constante 
+            //criada uma função para o evento de click do botão del
+            //armazenada a função na const clickDel
+            //clickDel() -> chamada da função
+            const clickDel = function(){
+                $('#del').on('click', function () {
+                    //remove o item do localStorage chamado nome
+                    localStorage.removeItem('nome');
+                    //limpando a div com id result
+                    $('#result').html('');
+                });
+            };
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Local Storage</h1>
+    <form method="POST">
+        <input type="text" id="nome" name="nome" placeholder="Digite um nome">
+        <br>
+        <button id="salvar">Salvar</button>
+    </form>
+    <hr>
+    <button id="buscar"> Consultar campo </button>
+    <div id="result"></div>
+</body>
+
+</html>

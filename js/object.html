@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=--, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object - Javascript</title>
+    <script>
+        var usuario = {
+            nome: "João",
+            idade: 25,
+            id: 123,
+            altura: 1.78
+        }; //Tipo de dado Obj
+
+        var usuario2 = {
+            nome: "José Feliz",
+            idade: 55,
+            id: 432,
+            altura: 1.99,
+            telefone: '61 5546 8797',
+            estadoMunicipio: {
+                uf: 'DF',
+                nome: 'Brasilia'
+            }
+        }; //Tipo de dado Obj
+
+        //var apiDados = [];
+
+        var arrDados = [usuario, usuario2, apiDados];
+        var pos;
+        for (pos = 0; pos < arrDados.length; pos++) {
+            alert(arrDados[pos].nome);
+            alert(arrDados[pos].idade);
+            alert(arrDados[pos].altura);
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

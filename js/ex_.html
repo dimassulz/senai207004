@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        function calcular(){
+            var mes = parseInt(document.getElementById('mes').value);
+            var total = mes*30;
+            document.getElementById('respMes').innerHTML = total;
+        }
+        
+    </script>
+</head>
+<body>
+    <select name="mes" id="mes">
+        <option value="0">Janeiro</option>
+        <option value="1">Fevereiro</option>
+        <option value="2">Março</option>
+    </select>
+    <button onclick="calcular()">Calcular</button>
+    <hr>
+    <div>
+        <h1 id="respMes"></h1>
+    </div>
+</body>
+</html>

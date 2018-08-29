@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    /*
+    1 - Criar um programa que receba idade e o peso de seis pessoas.
+
+    Calcule e mostre:
+    A quantidade de pessoas com mais de 90 quilos
+    A média das idades das seis pessoas
+    
+    */
+    var arrPesoIdade = []; //array para armazenar peso e idade
+    var qtdPessoas90 = 0;
+    var somaIdade = 0;
+    for(var i = 0; i < 6; i++){
+        arrPesoIdade[i] = { peso: parseFloat(prompt('PESO')), 
+                            idade: parseInt(prompt('IDADE')) }
+        if(arrPesoIdade[i].peso > 90){
+            qtdPessoas90++;
+        }
+        somaIdade += arrPesoIdade[i].idade;
+    }
+    alert(qtdPessoas90+' pessoa(s) com mais de 90 quilos ');
+    alert((somaIdade/6)+' anos é a média das idades das seis pessoas ');
+    
+    
+    
+    console.log(somaIdade/6);
+    console.log(qtdPessoas90);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

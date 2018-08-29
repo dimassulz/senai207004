@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Aluno Média Situação (Aprovado, Reprovado, Recuperação)</title>
+    <script>
+    /*
+    Criar um programa onde o usuário entrará com:
+    Nome do Aluno
+    Nota 1
+    Nota 2
+
+    O sistema calculará a média desse aluno e verificará se a média do aluno é maior ou igual a 70 a situação do aluno é "Aprovado", se a média do aluno estiver entre 50 e 70 a situação é "Recuperação",caso contrário está "Reprovado".
+
+    O sistema exibirá:
+
+    Aluno: Fulano - Nota: 70 - Situação: Aprovado
+    
+    */
+    var aluno = prompt('Digite o nome do aluno');
+    var n1 = parseFloat(
+                prompt('Digite a nota 1 (valores entre 0 e 100)')
+            );
+    var n2 = parseFloat(
+                prompt('Digite a nota 2 (valores entre 0 e 100)')
+            );
+    var media = (n1+n2)/2;
+
+    var situacao;
+
+    if(media >= 70){
+        situacao = "Aprovado!";
+    }else if(media >= 50){
+        situacao = "Recuperação!";
+    }else{
+        situacao = "Reprovado!";
+    }
+
+    alert("Aluno: "+aluno+' \nNota Média: '+media+' \nSituação:'+situacao);
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Css</title>
+    <script src="lib/jquery.js"></script>
+    <script>
+    $(function(){
+        $('#btn').on('click',function(){
+            $('h1').addClass('azul importante');
+        });
+
+        $('#btn2').on('click',function(){
+            $('h1').removeClass('azul importante');
+            
+        });
+
+        $('#btn3').on('click',function(){
+            $('h1').toggleClass('azul importante');
+        });
+
+    });
+    </script>
+    <style>
+        .importante {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .azul{
+            color: blue;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste do CSS</h1>
+    <button id="btn">Adicionar a cor azul</button>
+    <button id="btn2">Remover a cor azul</button>
+    <button id="btn3">Adiciona/Remove cor azul</button>
+</body>
+</html>

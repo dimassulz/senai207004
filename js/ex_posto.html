@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio Posto Combustivel</title>
+    <script>
+        /*
+        Considerando o valor do litro da gasolina a 4,399
+
+        Um motorista deseja colocar X reais de gasolina.
+        Monte um programa onde receberá o valor recebido (ex: 100) e exiba o valor em litros abastecido.
+
+        
+        */ 
+
+    var valorLitro = 4.399;
+    alert('Bem vindo ao POSTO APP - Valor da Gasolina R$'+valorLitro);
+
+    var valorRecebido = parseFloat(prompt('Digite o valor recebido'));
+    var totalLitros = valorRecebido/valorLitro;
+
+    alert('Com R$'+valorRecebido+' você colocou '+totalLitros.toFixed(3)+' litros de gasolina!');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
